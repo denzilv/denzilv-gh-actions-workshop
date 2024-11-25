@@ -105,7 +105,7 @@ jobs:
           subscription-id: ${{ secrets.AZ_SUBSCRIPTION_ID }}
 
       - name: Deploy resources
-        uses: azure/arm-deploy@v1
+        uses: azure/arm-deploy@v2
         id: deploy
         with:
           scope: subscription
